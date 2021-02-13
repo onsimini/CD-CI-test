@@ -12,6 +12,9 @@ jobs:
       with:
         python-version: '3.8'
 
+    - name: flake8 Lint
+      uses: py-actions/flake8@v1
+
     - name: Install requierement
       run: pip install -r requirements.txt
 
