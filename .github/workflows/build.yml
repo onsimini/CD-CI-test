@@ -21,5 +21,5 @@ jobs:
     - run: make -f Vtop.mk
     - run: g++ -I /usr/share/verilator/include/ -I . /usr/share/verilator/include/verilated.cpp src/top.cpp Vtop__ALL.a -o run_top
     - run: ls -alF
-    - run: ./runtop
+    - run: ./run_top
     - run: ls -alF
