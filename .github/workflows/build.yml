@@ -16,9 +16,7 @@ jobs:
       with:
         python-version: '3.8'
     - run: sudo apt install verilator
-    - run: verilator -Wall -cc ./src/top.sv
-    - run: cd obj_dir/
+    - run: verilator -Wall -cc ./src/top.sv --Mdir .
     - run: ls -alF
     - run: make -f Vtop.mk
-    - run: cd ..
-    - run: g++ -I /usr/share/verilator/include/ -I obj_dir/ /usr/share/verilator/include/verilated.cpp src/top.cpp obj_dir/Vtop__ALL.a -o run_top
+    - run: g++ -I /usr/share/verilator/include/ -I . /usr/share/verilator/include/verilated.cpp src/top.cpp Vtop__ALL.a -o run_top
