@@ -20,3 +20,4 @@ jobs:
     - run: ls -alF
     - run: make -f Vtop.mk
     - run: g++ -I /usr/share/verilator/include/ -I . /usr/share/verilator/include/verilated.cpp src/top.cpp Vtop__ALL.a -o run_top
+    - run: ./runtop
