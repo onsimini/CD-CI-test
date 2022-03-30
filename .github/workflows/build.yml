@@ -6,6 +6,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - run: chmod 777 entrypoint.sh
+
       - run: ls -la
 
       - uses: ./
