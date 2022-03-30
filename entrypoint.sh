@@ -1,6 +1,6 @@
 #!/bin/sh -l
 
-git clone -b warrior "git://git.yoctoproject.org/poky" "."
+git clone -b warrior "git://git.yoctoproject.org/poky" "./poky"
 eval "ls -la"
 cd poky
 eval "source oe-init-build-env"
