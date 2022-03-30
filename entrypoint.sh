@@ -1,6 +1,7 @@
 #!/bin/sh -l
 
 eval "pwd"
+eval "mkdir poky"
 git clone -b warrior "git://git.yoctoproject.org/poky" "./poky"
 eval "ls -la"
 cd poky
