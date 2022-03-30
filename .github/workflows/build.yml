@@ -8,11 +8,10 @@ jobs:
 
       - run: ls -la
 
-      - name: Hello world action step
+      - uses: ./
         id: hello
-        uses: actions/CD-CI-TEST@v1
         with:
-          who-to-greet: 'Mona the Octocat'
+          who-to-greet: 'Me, myself & I'
       # Use the output from the `hello` step
       - name: Get the output time
         run: echo "The time was ${{ steps.hello.outputs.time }}"
