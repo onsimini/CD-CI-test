@@ -1,14 +1,10 @@
-name: build
-
-on:
-  push:
-
+name: Test-the-flow
+on: [push]
 jobs:
-  build:
+  first-test:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
-
-    - name: Install requierement
-      run: echo 'Hello world !$!'
+      - uses: actions/checkout@v1
+      - name: Print-string
+        run: echo 'Hello world !$!'
 
