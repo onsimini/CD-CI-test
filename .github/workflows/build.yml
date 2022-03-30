@@ -9,3 +9,8 @@ jobs:
         run: echo 'Hello world !$!'
       - run: echo 'Hello world !$!' > test.txt
       - run: cat test.txt
+      - name: Upload output file
+        uses: actions/upload-artifact@v3
+        with:
+          name: test.txt-file
+          path: test.txt
