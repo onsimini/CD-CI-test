@@ -18,6 +18,7 @@ ENV LANG en_US.UTF-8
 USER dev
 
 WORKDIR /home/dev
+RUN chmod 777 /home/dev
 
 # Copies your code file from your action repository to the filesystem path `/` of the container
 COPY entrypoint.sh /entrypoint.sh
