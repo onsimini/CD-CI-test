@@ -6,7 +6,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - run: chmod 777 dockerContext\entrypoint.sh
+      - run: chmod 777 dockerContext/entrypoint.sh
 
       - run: ls -la
 
